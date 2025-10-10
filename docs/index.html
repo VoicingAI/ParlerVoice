@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ParlerVoice — Samples and Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>ParlerVoice</h1>
+        <p>Expressive TTS fine‑tuned on ~650h — based on Parler‑TTS Mini v1.1</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/VoicingAI/ParlerVoice" target="_blank">GitHub</a>
+          <a class="btn" href="../README.md" target="_blank">README</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="intro">
+        <h2>Introduction</h2>
+        <p>
+          ParlerVoice is an open‑source, expressive text‑to‑speech model from VoicingAI RnD Labs.
+          We fine‑tuned <code>parler-tts-mini-v1.1</code> on ~650 hours of curated audio for clearer timbre,
+          better pacing, and more controllable style.
+        </p>
+      </section>
+
+      <section id="usage">
+        <h2>Usage</h2>
+        <pre><code>pip install -r requirements.txt
+python gradio_app.py --checkpoint "/path/to/ckpt_or_repo" --base-model "parler-tts/parler-tts-mini-v1.1" --share</code></pre>
+      </section>
+
+      <section id="samples">
+        <h2>Audio Samples</h2>
+        <p>Place WAV files under <code>docs/samples/</code> using the filenames below.</p>
+
+        <div class="speaker">
+          <h3>Connor</h3>
+          <p><strong>Text:</strong> In a collaborative environment, the project's success is directly tied to the communication between team members.</p>
+          <div class="grid">
+            <div class="card"><p><strong>Professional</strong></p><audio controls src="samples/connor_professional.wav"></audio></div>
+            <div class="card"><p><strong>Energetic</strong></p><audio controls src="samples/connor_energetic.wav"></audio></div>
+            <div class="card"><p><strong>Sad</strong></p><audio controls src="samples/connor_sad.wav"></audio></div>
+            <div class="card"><p><strong>Dramatic</strong></p><audio controls src="samples/connor_dramatic.wav"></audio></div>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <h3>Madison</h3>
+          <p><strong>Text:</strong> I can't believe this happened. It was supposed to be perfect, and now everything is ruined.</p>
+          <div class="grid">
+            <div class="card"><p><strong>Professional</strong></p><audio controls src="samples/madison_pro.wav"></audio></div>
+            <div class="card"><p><strong>Energetic</strong></p><audio controls src="samples/madison_energetic.wav"></audio></div>
+            <div class="card"><p><strong>Sad</strong></p><audio controls src="samples/madison_sad.wav"></audio></div>
+            <div class="card"><p><strong>Dramatic</strong></p><audio controls src="samples/madison_dramatic.wav"></audio></div>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <h3>Tyler</h3>
+          <p><strong>Text:</strong> Take a deep breath and let all the tension go. Just focus on the sound of the ocean waves.</p>
+          <div class="grid">
+            <div class="card"><p><strong>Professional</strong></p><audio controls src="samples/tyler_pro.wav"></audio></div>
+            <div class="card"><p><strong>Energetic</strong></p><audio controls src="samples/tyler_energetic.wav"></audio></div>
+            <div class="card"><p><strong>Sad</strong></p><audio controls src="samples/tyler_sad.wav"></audio></div>
+            <div class="card"><p><strong>Dramatic</strong></p><audio controls src="samples/tyler_dramatic.wav"></audio></div>
+          </div>
+        </div>
+
+        <div class="speaker">
+          <h3>Ryan</h3>
+          <p><strong>Text:</strong> This new technology is a game-changer! It's going to revolutionize how we approach this problem.</p>
+          <div class="grid">
+            <div class="card"><p><strong>Professional</strong></p><audio controls src="samples/ryan_pro.wav"></audio></div>
+            <div class="card"><p><strong>Energetic</strong></p><audio controls src="samples/ryan_energetic.wav"></audio></div>
+            <div class="card"><p><strong>Sad</strong></p><audio controls src="samples/ryan_sad.wav"></audio></div>
+            <div class="card"><p><strong>Dramatic</strong></p><audio controls src="samples/ryan_dramatic.wav"></audio></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="model-info">
+        <h2>Model Info</h2>
+        <ul>
+          <li>Base: <code>parler-tts/parler-tts-mini-v1.1</code></li>
+          <li>Data: ~650 hrs of curated speech</li>
+          <li>Controls: tone, emotion, pitch, pace, style, reverb, noise</li>
+        </ul>
+
+        <h3>Speaker Names</h3>
+        <p>Use names directly in descriptions to bias style and identity:</p>
+        <div class="grid">
+          <div class="card">
+            <p><strong>American — Male</strong></p>
+            <p>Tyler, Ryan, Jackson, Kyle, Derek, Cameron, Marcus, Ethan, Parker, Hayden, Grant, Chase, Tucker, Dalton, Zach</p>
+          </div>
+          <div class="card">
+            <p><strong>American — Female</strong></p>
+            <p>Madison, Ashley, Jennifer, Samantha</p>
+          </div>
+          <div class="card">
+            <p><strong>English‑accented</strong></p>
+            <p>Oliver (male), Sophie (female)</p>
+          </div>
+          <div class="card">
+            <p><strong>Australia / New‑Zealand</strong></p>
+            <p>Liam (male), Ruby (female), Finn (male), Emma (female), Chloe (female)</p>
+          </div>
+          <div class="card">
+            <p><strong>Other accents</strong></p>
+            <p>Connor (Canadian), Thabo (South african), Wei (Chinese), Marco (Italian), Cian (Irish)</p>
+          </div>
+          <div class="card">
+            <p><strong>Full list</strong></p>
+            <p>Connor, Thabo, Madison, Tyler, Mei, Jackson, Brandon, Ashley, Kyle, Jennifer, Ryan, Austin, Derek, Camille, Brittany, Johan, Trevor, Jordan, Nathan, Sophie, Cameron, Marcus, Blake, Samantha, Garrett, Caleb, Logan, Ethan, Hunter, Mason, Aoife, Chloe, Lin, Xiao, Colton, Flynn, Devin, Li, Marco, Emma, Carson, Rachel, Oliver, Preston, Wei, Landon, Liam, Bryce, Finn, Parker, Hayden, Grant, Chase, Siobhan, Tucker, Dalton, Zach, Jasper, Niamh, Jing, Erin, Cole, Yan, Paige, Noah, Taylor, Trent, Shane, Jared, Reid, Spencer, Wyatt, Ingrid, Luke, Zara, Alexis, Cody, Haley, Megan, Drew, Pieter, Priya, Henry, Vincent, Nolan, Kane, Grace, Ian, Ruby, Kent, Elena, Cian, Jace, Max, Reed, Wade, George, Seth, Cruz, Miles, John, Alice, Michael, Olivia.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Built by VoicingAI RnD Labs.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
