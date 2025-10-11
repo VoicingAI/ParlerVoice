@@ -1,6 +1,6 @@
 # ParlerVoice
 
-ParlerVoice - an open‑source, expressive text‑to‑speech model fine‑tuned on ~650 hours of curated audio by VoicingAI RnD Labs, based on `parler-tts-mini-v1.1`.
+ParlerVoice is an expressive text-to-speech model fine‑tuned on ~650 hours of curated audio by VoicingAI RnD Labs, based on the Parler‑TTS Mini v1.1 architecture.
 
 - Base: `parler-tts/parler-tts-mini-v1.1`
 - Data: ~650 hours (curated)
@@ -15,6 +15,8 @@ Project repository: [VoicingAI/ParlerVoice](https://github.com/VoicingAI/ParlerV
 
 ```bash
 pip install git+https://github.com/huggingface/parler-tts.git
+
+pip install -r requirements.txt
 ```
 
 ## 🎯 Usage (Transformers API)
@@ -35,7 +37,6 @@ ckpt = "parler-tts/parler-tts-mini-v1.1"
 model = ParlerTTSForConditionalGeneration.from_pretrained(model_path).to(device)
 
 prompt_tokenizer = AutoTokenizer.from_pretrained(ckpt)
-
 description_tokenizer = AutoTokenizer.from_pretrained(model.config.text_encoder._name_or_path)
 
 prompt = "Hey, how are you doing today?"
@@ -134,8 +135,8 @@ You can then vary emotion/tone to get different styles (e.g., professional, ener
 
 ## 🔧 Key capabilities
 - Descriptive control via caption: background noise, reverberation, expressivity, pitch, pace
-- Consistent “speaker names” referenced in the caption to bias style
-- Compatible with performance optimizations from Parler‑TTS.
+- Consistent "speaker names" referenced in the caption to bias style
+- Compatible with performance optimizations from upstream Parler‑TTS (e.g., SDPA, compile)
 
 For optimization tips, see Parler‑TTS docs: [INFERENCE.md](https://github.com/huggingface/parler-tts/blob/main/INFERENCE.md)
 
@@ -150,9 +151,9 @@ For optimization tips, see Parler‑TTS docs: [INFERENCE.md](https://github.com/
 - We are iterating on description phrasing to improve naturalness and controllability.
 
 ## 🧑 Named speakers for consistency
-We assign human‑readable names to 85 speakers to improve style and identity consistency across generations. Use names directly in captions, e.g., “Connor … speaks with a professional tone…”.
+We assign human‑readable names to 85 speakers to improve style and identity consistency across generations. Use names directly in captions, e.g., "Connor … speaks with a professional tone…".
 
-American — Male
+**American — Male**
 
 | Name    |
 |---------|
@@ -172,7 +173,7 @@ American — Male
 | Dalton  |
 | Zach    |
 
-American — Female
+**American — Female**
 
 | Name     |
 |----------|
@@ -181,14 +182,14 @@ American — Female
 | Jennifer |
 | Samantha |
 
-English‑accented
+**English‑accented**
 
 | Name   | Gender |
 |--------|--------|
 | Oliver | male   |
 | Sophie | female |
 
-Australian / New‑Zealand
+**Australian / New‑Zealand**
 
 | Name  | Gender |
 |-------|--------|
@@ -198,7 +199,7 @@ Australian / New‑Zealand
 | Emma  | female |
 | Chloe | female |
 
-Other accents
+**Other accents**
 
 | Name   | Gender | Accent        |
 |--------|--------|---------------|
@@ -212,7 +213,7 @@ Other accents
 Connor, Thabo, Madison, Tyler, Mei, Jackson, Brandon, Ashley, Kyle, Jennifer, Ryan, Austin, Derek, Camille, Brittany, Johan, Trevor, Jordan, Nathan, Sophie, Cameron, Marcus, Blake, Samantha, Garrett, Caleb, Logan, Ethan, Hunter, Mason, Aoife, Chloe, Lin, Xiao, Colton, Flynn, Devin, Li, Marco, Emma, Carson, Rachel, Oliver, Preston, Wei, Landon, Liam, Bryce, Finn, Parker, Hayden, Grant, Chase, Siobhan, Tucker, Dalton, Zach, Jasper, Niamh, Jing, Erin, Cole, Yan, Paige, Noah, Taylor, Trent, Shane, Jared, Reid, Spencer, Wyatt, Ingrid, Luke, Zara, Alexis, Cody, Haley, Megan, Drew, Pieter, Priya, Henry, Vincent, Nolan, Kane, Grace, Ian, Ruby, Kent, Elena, Cian, Jace, Max, Reed, Wade, George, Seth, Cruz, Miles, John, Alice, Michael, Olivia.
 
 ## 📚 Citation
-If you use this work, please consider citing Parler‑TTS and the original paper.
+If you use this work, please consider citing upstream Parler‑TTS and the original paper.
 
 ```
 @misc{lacombe-etal-2024-parler-tts,
@@ -235,3 +236,5 @@ If you use this work, please consider citing Parler‑TTS and the original paper
   primaryClass={cs.SD}
 }
 ```
+
+
