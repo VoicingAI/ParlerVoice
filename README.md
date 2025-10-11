@@ -1,22 +1,3 @@
----
-library_name: transformers
-pipeline_tag: text-to-speech
-license: apache-2.0
-language:
-- en
-inference: false
-tags:
-- text-to-speech
-- tts
-- expressive
-- finetuned
-datasets:
-- Emilia-YODAS
-- Expresso
----
-
-<!-- <img src="Voicing" alt="Voicing logo" width="800"/> -->
-
 # ParlerVoice
 
 ParlerVoice is an expressive text-to-speech model fine‑tuned on ~650 hours of curated audio (Emilia YODAS subset + Expresso), based on the Parler‑TTS Mini v1.1 architecture.
