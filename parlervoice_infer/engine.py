@@ -16,8 +16,8 @@ from .description import build_advanced_description
 logger = logging.getLogger(__name__)
 
 
-class ParlerTTSInference:
-    """ParlerTTS inference engine with enhanced generation options."""
+class ParlerVoiceInference:
+    """ParlerVoice inference engine with enhanced generation options."""
 
     def __init__(
         self,

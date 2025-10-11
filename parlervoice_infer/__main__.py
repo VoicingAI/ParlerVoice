@@ -4,14 +4,14 @@ import logging
 from typing import Optional
 
 from .config import GenerationConfig
-from .engine import ParlerTTSInference
+from .engine import ParlerVoiceInference
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 def _parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Parler TTS Inference CLI")
+    p = argparse.ArgumentParser(description="ParlerVoice TTS Inference CLI")
     p.add_argument("--checkpoint", required=True, help="Path to fine-tuned checkpoint")
     p.add_argument("--base-model", default="parler-tts/parler-tts-mini-v1.1", help="Base model path")
     p.add_argument("--prompt", help="Text to speak")
@@ -47,7 +47,7 @@ def main() -> int:
         num_beams=args.num_beams,
     )
 
-    infer = ParlerTTSInference(checkpoint_path=args.checkpoint, base_model_path=args.base_model)
+    infer = ParlerVoiceInference(checkpoint_path=args.checkpoint, base_model_path=args.base_model)
 
     if args.jobs:
         count = 0

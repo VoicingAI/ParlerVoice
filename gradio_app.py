@@ -5,7 +5,7 @@ from typing import Tuple
 
 import gradio as gr
 
-from parlervoice_infer.engine import ParlerTTSInference
+from parlervoice_infer.engine import ParlerVoiceInference
 from parlervoice_infer.config import GenerationConfig
 from parlervoice_infer.presets import PRESETS
 from parlervoice_infer.constants import (
@@ -19,13 +19,13 @@ from parlervoice_infer.constants import (
 from parlervoice_infer.description import build_advanced_description
 
 
-_INFER: ParlerTTSInference = None
+_INFER: ParlerVoiceInference = None
 
 
-def _ensure_infer(checkpoint: str, base_model: str) -> ParlerTTSInference:
+def _ensure_infer(checkpoint: str, base_model: str) -> ParlerVoiceInference:
     global _INFER
     if _INFER is None:
-        _INFER = ParlerTTSInference(checkpoint_path=checkpoint, base_model_path=base_model)
+        _INFER = ParlerVoiceInference(checkpoint_path=checkpoint, base_model_path=base_model)
     return _INFER
 
 
