@@ -106,6 +106,7 @@ pip install -r requirements.txt
 
 ### **Quick Start with Presets** (Recommended)
 
+```python
 from parlervoice_infer.engine import ParlerVoiceInference
 from parlervoice_infer.config import GenerationConfig
 
@@ -128,6 +129,7 @@ audio, path = infer.generate_with_speaker_preset(
 
 ### **Advanced Usage with Rich Descriptions**
 
+```python
 # For maximum control and consistency
 desc = (
     "Connor conveys a confident, professional tone with a warm and engaging delivery. "
