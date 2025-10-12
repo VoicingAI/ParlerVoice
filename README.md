@@ -76,7 +76,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📊 **Technical Reports & Outputs**
 
-For detailed technical analysis, performance benchmarks, and comprehensive evaluation results, visit our **[Technical Report & Samples](https://www.notion.so/ParlerTTS-samples-285776bb53f280f9ac83d1a158ffa5a2?source=copy_link)**.
+For detailed technical analysis, performance benchmarks, and comprehensive evaluation results, visit our **[Technical Report & Samples](https://quilt-growth-39a.notion.site/ParlerVoice-28a776bb53f280949beef800875eb0f7?source=copy_link)**.
 
 *Featuring ablation studies, comparative analysis, and extensive audio samples demonstrating ParlerVoice's superior performance across multiple dimensions.*
 
@@ -180,7 +180,7 @@ ParlerVoice features an extensive collection of **85 professionally curated spea
 | Marco | Male | Italian |
 | Cian | Male | Irish |
 
-*Full speaker list available in the [technical documentation](https://www.notion.so/ParlerTTS-samples-285776bb53f280f9ac83d1a158ffa5a2?source=copy_link)*
+*Full speaker list available in the [technical documentation](https://quilt-growth-39a.notion.site/ParlerVoice-28a776bb53f280949beef800875eb0f7?source=copy_link)*
 
 ---
 
@@ -205,7 +205,7 @@ ParlerVoice features an extensive collection of **85 professionally curated spea
 
 ## 📈 **Performance Highlights**
 
-*Detailed evaluation results and comparative analysis available in our [Technical Report](https://www.notion.so/ParlerTTS-samples-285776bb53f280f9ac83d1a158ffa5a2?source=copy_link)*
+*Detailed evaluation results and comparative analysis available in our [Technical Report](https://quilt-growth-39a.notion.site/ParlerVoice-28a776bb53f280949beef800875eb0f7?source=copy_link)*
 
 - **Speaker Consistency**: Maintains voice identity across different emotional states and speaking styles
 - **Naturalness**: Human-evaluated audio quality meeting high standards
