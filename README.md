@@ -9,9 +9,9 @@
 
 <div align="center">
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue.svg)](https://huggingface.co/spaces)
-⚠️ **Non-Commercial Use Only**
 
 </div>
 
@@ -49,24 +49,16 @@ Our comprehensive technical evaluation demonstrates ParlerVoice's superior perfo
 
 ---
 
-## 📋 **License & Usage Terms**
+## 📋 **License**
 
-**⚠️ Non-Commercial Use Only**
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-This project is proprietary software developed by VoicingAI R&D Labs. All rights reserved.
-
-**Permitted Uses:**
-- ✅ Academic research and educational purposes
-- ✅ Personal, non-commercial projects
-- ✅ Open-source community contributions and improvements
-
-**Prohibited Uses:**
-- ❌ Commercial applications or services
-- ❌ Integration into commercial products
-- ❌ Redistribution for profit
-- ❌ Use in production commercial systems
-
-For commercial licensing inquiries, please contact VoicingAI R&D Labs.
+**Open Source & Free to Use** - ParlerVoice is available for:
+- ✅ **Commercial applications** and services
+- ✅ **Academic research** and educational purposes
+- ✅ **Personal projects** and community contributions
+- ✅ **Integration** into other products and services
+- ✅ **Modification** and redistribution
 
 ---
 
@@ -249,7 +241,7 @@ If you use this work, please consider citing:
 
 <div align="center">
 
-**© 2025 VoicingAI R&D Labs | Proprietary Software**
+**Made with ❤️ by VoicingAI R&D Labs**
 
 </div>
 
