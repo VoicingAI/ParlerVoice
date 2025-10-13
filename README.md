@@ -92,6 +92,10 @@ pip install git+https://github.com/huggingface/parler-tts.git
 pip install -r requirements.txt
 ```
 
+## 🤗 **Model Location**
+
+The ParlerVoice model is available on HuggingFace: **[TieIncred/ParlerVoice](https://huggingface.co/TieIncred/ParlerVoice)**
+
 ---
 
 ## 💻 **Usage**
@@ -104,7 +108,7 @@ from parlervoice_infer.config import GenerationConfig
 
 # Initialize the engine
 infer = ParlerVoiceInference(
-    checkpoint_path="/path/to/ckpt",
+    checkpoint_path="TieIncred/ParlerVoice",  # HuggingFace model
     base_model_path="parler-tts/parler-tts-mini-v1.1",
 )
 
@@ -141,7 +145,7 @@ audio, path = infer.generate_audio(
 
 ```bash
 python -m parlervoice_infer \
-  --checkpoint "/path/to/ckpt" \
+  --checkpoint "TieIncred/ParlerVoice" \
   --prompt "Experience the next generation of voice synthesis!" \
   --speaker Connor \
   --preset dramatic \
