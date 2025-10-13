@@ -29,7 +29,7 @@
 
 ### **Technical Specifications**
 - **Base Model**: `parler-tts/parler-tts-mini-v1.1`
-- **Training Data**: 650+ hours of curated audio (Emilia YODAS subset + Expresso)
+- **Training Data**: 650+ hours of curated audio (mostly proprietary, public release coming soon)
 - **Architecture**: Two-tokenizer flow for enhanced control and consistency
 - **Output Quality**: 24kHz high-fidelity audio generation
 
